@@ -42,7 +42,7 @@
                <table class="table table-bordered">
                  <thead>
                    <tr>
-                     <th class="text-center align-middle">#</th>
+                     <th class="text-center align-middle">No</th>
                      <th class="text-center align-middle">Id</th>
                      <th class="text-center align-middle">Status</th>
                      <th class="text-center align-middle">Aksi</th>

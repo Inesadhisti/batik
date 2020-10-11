@@ -2,11 +2,11 @@
 // echo "<script>alert('http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]&ranking=true');</script>";
 // $actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 //query tbl perbandingan
-$query1 = mysqli_query($koneksi, "SELECT * FROM tb_perb_kriteria where id_kriteria='B01'");
-$query2 = mysqli_query($koneksi, "SELECT * FROM tb_perb_kriteria where id_kriteria='B02'");
-$query3 = mysqli_query($koneksi, "SELECT * FROM tb_perb_kriteria where id_kriteria='B03'");
-$query4 = mysqli_query($koneksi, "SELECT * FROM tb_perb_kriteria where id_kriteria='B04'");
-$query5 = mysqli_query($koneksi, "SELECT * FROM tb_perb_kriteria where id_kriteria='B05'");
+$query1 = mysqli_query($koneksi, "SELECT * FROM tbl_kriteria where id_kriteria='1'");
+$query2 = mysqli_query($koneksi, "SELECT * FROM tbl_kriteria where id_kriteria='2'");
+$query3 = mysqli_query($koneksi, "SELECT * FROM tbl_kriteria where id_kriteria='3'");
+$query4 = mysqli_query($koneksi, "SELECT * FROM tbl_kriteria where id_kriteria='4'");
+$query5 = mysqli_query($koneksi, "SELECT * FROM tbl_kriteria where id_kriteria='5'");
 $b1 = mysqli_fetch_array($query1);
 $b2 = mysqli_fetch_array($query2);
 $b3 = mysqli_fetch_array($query3);
@@ -106,11 +106,11 @@ if (isset($_GET['id_bobot'])) {
           <thead class="thead-light">
             <tr>
               <th class="text-center">Kriteria</th>
-              <th class="text-center"><?php echo $b1['kriteria1']; ?></th>
-              <th class="text-center"><?php echo $b2['kriteria1']; ?></th>
-              <th class="text-center"><?php echo $b3['kriteria1']; ?></th>
-              <th class="text-center"><?php echo $b4['kriteria1']; ?></th>
-              <th class="text-center"><?php echo $b5['kriteria1']; ?></th>
+              <th class="text-center"><?php echo $b1['nama_kriteria']; ?></th>
+              <th class="text-center"><?php echo $b2['nama_kriteria']; ?></th>
+              <th class="text-center"><?php echo $b3['nama_kriteria']; ?></th>
+              <th class="text-center"><?php echo $b4['nama_kriteria']; ?></th>
+              <th class="text-center"><?php echo $b5['nama_kriteria']; ?></th>
             </tr>
           </thead>
           <tbody>
