@@ -85,7 +85,7 @@ if (isset($_GET['id_bobot'])) {
                 <th class="text-center">Tabel Kepentingan</th>
                 <th class="text-center"><?= $bb1; ?></th>
                 <th class="text-center"><?= $bb2; ?></th>
-                <th class="text-center"><?= $bb3; ?></th>
+                <th class="text-center"> <?= $bb3 >?; ?></th>
                 <th class="text-center"><?= $bb4; ?></th>
                 <th class="text-center"><?= $bb5; ?></th>
               </tr>
